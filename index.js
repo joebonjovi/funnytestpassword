@@ -1,11 +1,11 @@
 var password = "12345";
-var name = (document.getElementById('name').value);
+var name = document.getElementById('name').value;
 
 function passcheck() {
 	
 	
      if(document.getElementById('pass1').value != password && document.getElementById('name').value != "") {
-     alert('Incorrect or missing Password, Try Again.');
+     alert(document.getElementById('name').value+ ', you stupid shit, Incorrect or missing Password, Try Again.');
      return false;
      }
 	
@@ -20,8 +20,7 @@ function passcheck() {
      }
 	
 	if(document.getElementById('pass1').value != password && document.getElementById('name').value == "") {
-	 alert('Your name is missing FUCKTARD.')
-	 alert('Your Password is also missing or Incorrect FUCKTARD.');
+	 alert("Your name is missing FUCKTARD. \nYour Password is also missing or Incorrect.")
      return false;
      }
-}	
+}		
